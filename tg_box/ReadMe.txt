@@ -19,3 +19,5 @@ before you install this module you must follow these steps because files are sto
       
 - Now get into server file system and go to /usr/lib/pymodules/python2.7/openerp  (Debian)
 - create a folder named "tgboxstore" + chown openerp:openerp + CHMOD 755
+
+signé n1bus
