@@ -1,0 +1,110 @@
+.field_binary{
+    width: 150px;
+}
+
+.oe_form_binary table td button{
+    padding: 2px 0px 2px 0px;   
+}
+
+
+/*Kanban view*/
+.oe_kanban_image_box {
+  display: inline-block;
+  vertical-align: top;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  overflow: hidden;
+  border: 1px solid #666666;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.oe_kanban_details_box {
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  font-size: 13px;
+  padding: 0 5px;
+  color: #4c4c4c;
+}
+
+.oe_kanban_vignette_box {
+  padding: 8px;
+  border: 1px solid white;
+  border-radius: 4px;
+  margin: 5px;  
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.kanban_box_description{
+    color: #666666;
+    font-style: italic;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.oe_kanban_details_box h3{
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.kanban_box_file{
+    font-size: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.k_ellipis{
+  text-overflow: ellipsis;
+  }
+
+.kanban_icon_file{
+  float:right;
+}
+
+.tgbox_icon{
+  border-color: transparent !important;
+  color:white;
+}
+
+.box_desc{
+  font-style: italic;
+  color: #999;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.tgbox_comment{
+  font-size: 110%;
+  font-style: italic;
+  color: #666;
+  padding-left: 10px !important;
+}
+
+.tgbox_toolbar{
+  padding: 7px 14px;
+  background-image: url('../img/bg.png');
+  border: 1px solid #ddd;
+  display: block;
+}
+
+.tg_cat_btn{
+  border: 1px solid #666;
+  padding: 2px 4px 2px 4px;
+  border-radius: 5px;
+  margin-right: 6px;
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b886c5), to(#5d2a6c));
+  background: -moz-linear-gradient(#b886c5, #5d2a6c);
+  background:  -ms-linear-gradient(#b886c5, #5d2a6c);
+  background:      linear-gradient(#b886c5, #5d2a6c);
+  color:white;
+  cursor: pointer;
+}

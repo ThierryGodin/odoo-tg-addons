@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates id="template" xml:space="preserve">
+
+    <t t-name="TgBoxView">
+    	<tr id="tgbox_title_comment">
+    		<td colspan="4" class="tgbox_comment"/>
+   	    </tr>
+    </t>
+
+     <t t-name="TgSubCatList">
+        <div class="tgbox_toolbar"/>   
+    </t>
+
+    <t t-name="TgOneCat">
+    	<span class="tg_cat_btn"><t t-esc="subcat_name"/></span>
+    </t>
+
+</templates>

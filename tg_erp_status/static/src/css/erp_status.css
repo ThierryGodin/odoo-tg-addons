@@ -1,0 +1,84 @@
+#tg_status_panel{
+	position: absolute;
+	z-index: 9999999999999999999999999999999;
+
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	display: none;
+}
+
+#tg_status_frame{
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "Lato","Lucida Grande", Helvetica, Verdana, Arial;
+    display: none;
+    padding: 3px 3px 3px 3px;
+    text-align: center;
+    border-bottom: 1px solid yellow;
+    background: red url('../img/status_warning_bg.png') repeat;
+}
+
+#tg_status_frame img{
+    vertical-align: middle;
+}
+
+#tg_status_panel_frame{
+	top : 10%;
+    left: 5%;
+    right: 5%;
+    bottom: 10%;
+    position: absolute;
+    border : 2px solid white;
+    border-radius: 10px;
+    background: #5d2a6c;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b886c5), to(#5d2a6c));
+    background: -moz-linear-gradient(#b886c5, #5d2a6c);
+    background:  -ms-linear-gradient(#b886c5, #5d2a6c);
+    background:      linear-gradient(#b886c5, #5d2a6c);
+    text-shadow: 0px 0px 5px rgba(255,255,255,0.21);
+    -webkit-box-shadow:  0px 0px 2px rgba(0,0,0,0.3) inset, 0px 1px 2px rgba(0,0,0,0.1);
+       -moz-box-shadow:  0px 0px 2px rgba(0,0,0,0.3) inset, 0px 1px 2px rgba(0,0,0,0.1);
+        -ms-box-shadow:  0px 0px 2px rgba(0,0,0,0.3) inset, 0px 1px 2px rgba(0,0,0,0.1);
+         -o-box-shadow:  0px 0px 2px rgba(0,0,0,0.3) inset, 0px 1px 2px rgba(0,0,0,0.1);
+            box-shadow:  0px 0px 2px rgba(0,0,0,0.3) inset, 0px 1px 2px rgba(0,0,0,0.1);
+    display: block;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#tg_status_panel_logo{
+	text-align: center;
+	padding: 10px;
+}
+
+#tg_status_panel_frame_title{
+	text-align: center;
+	font-size: 200%;
+	color: black;
+}
+
+#tg_status_panel_frame_text{
+	margin-top: 2%;
+	margin-left: 10%;
+	margin-right: 10%;
+	display: block;
+	background-color: white;
+	min-height: 40%;
+	padding: 20px;
+	border-radius: 8px;
+    -webkit-box-shadow: 0px 1px 0px white, 0px 3px 0px #DFDFDF, 0px 7px 16px rgba(0, 0, 0, 0.20);
+       -moz-box-shadow: 0px 1px 0px white, 0px 3px 0px #DFDFDF, 0px 7px 16px rgba(0, 0, 0, 0.20);
+            box-shadow: 0px 1px 0px white, 0px 3px 0px #DFDFDF, 0px 7px 16px rgba(0, 0, 0, 0.20);
+}
+
+#tg_status_panel_frame_bottom{
+	text-align: right;
+	display: block;
+	margin-right: 10%;
+	font-size: 120%;
+	color: black;
+	font-style: italic;
+	padding-top: 5px;
+}

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_tg_box_u,tg.box user,model_tg_box,tg_box.group_tg_box_user,1,0,0,0
+access_tg_box_m,tg.box manager,model_tg_box,tg_box.group_tg_box_manager,1,1,1,1
+access_tg_box_category_u,tg.box user,model_tg_box_category,tg_box.group_tg_box_user,1,0,0,0
+access_tg_box_category_m,tg.box manager,model_tg_box_category,tg_box.group_tg_box_manager,1,1,1,1

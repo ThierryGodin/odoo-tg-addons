@@ -1,0 +1,355 @@
+# Translation of OpenERP Server.
+# This file contains the translation of the following modules:
+#	* tg_box
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: OpenERP Server 7.0-20140627-231127\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2005-08-19 05:06+0000\n"
+"PO-Revision-Date: 2005-08-19 05:06+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: tg_box
+#: view:tg.box:0
+#: field:tg.box,category_id:0
+#: field:tg.box,category_name:0
+msgid "Category"
+msgstr "Categorie"
+
+#. module: tg_box
+#: selection:tg.box,type:0
+msgid "Binary"
+msgstr "Binaire"
+
+#. module: tg_box
+#: model:ir.actions.act_window,name:tg_box.action_see_box_form
+#: model:ir.ui.menu,name:tg_box.menu_action_see_box_form
+#: view:tg.box:0
+msgid "Documents"
+msgstr "Documents"
+
+#. module: tg_box
+#: field:tg.box,datas:0
+msgid "File Content"
+msgstr "Contenu"
+
+#. module: tg_box
+#: field:tg.box,create_uid:0
+msgid "Author"
+msgstr "Auteur"
+
+#. module: tg_box
+#: model:ir.model,name:tg_box.model_tg_box_category
+msgid "tg.box.category"
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box.category,menu_id:0
+msgid "Menu"
+msgstr "Menu"
+
+#. module: tg_box
+#: help:tg.box,description:0
+msgid "File description"
+msgstr "Description du fichier"
+
+#. module: tg_box
+#: field:tg.box.category,child_ids:0
+msgid "Child Categories"
+msgstr "Catégories enfant"
+
+#. module: tg_box
+#: view:tg.box:0
+msgid "Click to set the thumbnail."
+msgstr "Cliquer pour ajouter un aperçu"
+
+#. module: tg_box
+#: field:tg.box,file_size:0
+msgid "File Size"
+msgstr "Taille du fichier"
+
+#. module: tg_box
+#: help:tg.box,image:0
+msgid "This field holds the image."
+msgstr "Ce champ contient l'image"
+
+#. module: tg_box
+#: field:tg.box,write_uid:0
+msgid "Last Contributor"
+msgstr "Dernier contributeur"
+
+#. module: tg_box
+#: model:ir.actions.act_window,name:tg_box.action_see_box_category_tree
+#: model:ir.ui.menu,name:tg_box.menu_action_see_box_category_tree
+msgid "Categorie's Structure"
+msgstr "Structure des catégories"
+
+#. module: tg_box
+#: help:tg.box.category,restricted:0
+msgid "If restricted, category is visible for managers only"
+msgstr "Si restreinte, la catégorie est visibles seulement pour les managers de la TG Box"
+
+#. module: tg_box
+#: field:tg.box,editor_name:0
+msgid "Editor Name"
+msgstr "Éditeur"
+
+#. module: tg_box
+#: view:tg.box:0
+#: field:tg.box,type:0
+msgid "Type"
+msgstr "Type"
+
+#. module: tg_box
+#: field:tg.box,hr_filesize:0
+msgid "Human readable filesize"
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box.category,parent_right:0
+msgid "Right Parent"
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box,store_fname:0
+msgid "Stored Filename"
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box,description:0
+#: view:tg.box.category:0
+msgid "Description"
+msgstr "Description"
+
+#. module: tg_box
+#: field:tg.box,icon:0
+msgid "Icon file"
+msgstr "Icone"
+
+#. module: tg_box
+#: view:tg.box:0
+msgid "Authorized users (None selected = All)"
+msgstr "Utilisateurs autorisés (Aucun = Tous)"
+
+#. module: tg_box
+#: field:tg.box,image_medium:0
+msgid "Medium-sized image"
+msgstr ""
+
+#. module: tg_box
+#: view:tg.box:0
+msgid "File type"
+msgstr "Type de fichier"
+
+#. module: tg_box
+#: field:res.users,box_ids:0
+msgid "Box documents"
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box,url:0
+msgid "Url"
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box.category,restricted:0
+msgid "Restricted"
+msgstr "Restreint"
+
+#. module: tg_box
+#: code:addons/tg_box/tg_box.py:315
+#, python-format
+msgid "This category is not empty. Move or delete documents first."
+msgstr "Cette catégorie n'est pas vide. Déplacez ou supprimez des documents avant"
+
+#. module: tg_box
+#: field:tg.box,auth_user_ids:0
+msgid "Authorized users"
+msgstr "Utilisateurs autorisés"
+
+#. module: tg_box
+#: model:ir.ui.menu,name:tg_box.menu_box_configuration
+msgid "Configuration"
+msgstr "Configuration"
+
+#. module: tg_box
+#: view:tg.box:0
+msgid "Data"
+msgstr "Données"
+
+#. module: tg_box
+#: model:ir.actions.act_window,name:tg_box.action_see_box_category
+#: model:ir.ui.menu,name:tg_box.menu_action_see_box_category
+#: view:tg.box.category:0
+msgid "Categories"
+msgstr ""
+
+#. module: tg_box
+#: model:res.groups,name:tg_box.group_tg_box_user
+msgid "User"
+msgstr "Utilisateur"
+
+#. module: tg_box
+#: field:tg.box.category,description:0
+msgid "Category description"
+msgstr "Description de la catégorie"
+
+#. module: tg_box
+#: field:tg.box.category,complete_name:0
+msgid "Name"
+msgstr "Nom"
+
+#. module: tg_box
+#: field:tg.box.category,parent_id:0
+msgid "Parent Category"
+msgstr "Catégorie parente"
+
+#. module: tg_box
+#: selection:tg.box,type:0
+msgid "URL"
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box,create_date:0
+msgid "Created on"
+msgstr "Créé le"
+
+#. module: tg_box
+#: field:tg.box,name:0
+msgid "File name"
+msgstr "Nom du fichier"
+
+#. module: tg_box
+#: field:tg.box,creator_name:0
+msgid "Creator Name"
+msgstr "Créé par"
+
+#. module: tg_box
+#: view:tg.box:0
+msgid "Size :"
+msgstr "Taille :"
+
+#. module: tg_box
+#: help:tg.box,category_id:0
+msgid "Select category for the current file"
+msgstr "Sélectionnez une catégorie pour ce fichier"
+
+#. module: tg_box
+#: model:ir.model,name:tg_box.model_tg_box
+msgid "Shared documents box"
+msgstr "Boite de partage de documents"
+
+#. module: tg_box
+#: model:ir.ui.menu,name:tg_box.menu_box_menu
+#: model:ir.ui.menu,name:tg_box.tgbox_menu_top
+msgid "TG-Box"
+msgstr ""
+
+#. module: tg_box
+#: view:tg.box.category:0
+msgid "parent category"
+msgstr "catégorie parente"
+
+#. module: tg_box
+#: view:tg.box:0
+msgid "File :"
+msgstr "Fichier :"
+
+#. module: tg_box
+#: model:ir.model,name:tg_box.model_res_users
+msgid "Users"
+msgstr "Utilisateurs"
+
+#. module: tg_box
+#: field:tg.box,write_date:0
+msgid "Modification Date"
+msgstr "Date de modification"
+
+#. module: tg_box
+#: field:tg.box.category,parent_left:0
+msgid "Left Parent"
+msgstr ""
+
+#. module: tg_box
+#: view:tg.box:0
+msgid "Contributors"
+msgstr "Contributeurs"
+
+#. module: tg_box
+#: field:tg.box,sequence:0
+msgid "Sequence"
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box,db_datas:0
+msgid "Database Data"
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box,datas_fname:0
+msgid "File Name"
+msgstr "Nom du fichier"
+
+#. module: tg_box
+#: constraint:tg.box.category:0
+msgid "Error ! You cannot create recursive categories."
+msgstr "Erreur! Vous ne pouvez pas créer des catégories récursives"
+
+#. module: tg_box
+#: help:tg.box,type:0
+msgid "Binary File or URL"
+msgstr "Fichier binaire ou URL"
+
+#. module: tg_box
+#: model:res.groups,name:tg_box.group_tg_box_manager
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: tg_box
+#: help:tg.box,image_medium:0
+msgid "Medium-sized image "
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box.category,name:0
+msgid "Category name"
+msgstr "Nom de la catégorie"
+
+#. module: tg_box
+#: code:addons/tg_box/tg_box.py:315
+#, python-format
+msgid "Warning!"
+msgstr "Attention!"
+
+#. module: tg_box
+#: view:tg.box:0
+msgid "File"
+msgstr "Fichier"
+
+#. module: tg_box
+#: field:tg.box,image_small:0
+#: help:tg.box,image_small:0
+msgid "Small-sized image"
+msgstr ""
+
+#. module: tg_box
+#: field:tg.box,extension:0
+msgid "File extension"
+msgstr "Extension du fichier"
+
+#. module: tg_box
+#: field:tg.box,image:0
+msgid "Image"
+msgstr ""
+
+#. module: tg_box
+#: view:tg.box:0
+msgid "Details"
+msgstr "Détails"
+

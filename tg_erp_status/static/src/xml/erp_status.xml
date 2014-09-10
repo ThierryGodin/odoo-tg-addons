@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- vim:fdl=1:
+-->
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="WebClient">
+        <t t-jquery=".openerp_webclient_container" t-operation="prepend">
+            <div id="tg_status_panel">
+                <div id="tg_status_panel_frame">
+                    <div id="tg_status_panel_logo">
+                        <img src="tg_erp_status/static/src/img/logo_300x58.png" title=""/> 
+                    </div>
+                    <div id="tg_status_panel_frame_title">CLOSED FOR MAINTENANCE</div>
+                    <div id="tg_status_panel_frame_text"></div>
+                    <div id="tg_status_panel_frame_bottom"><strong>Open<span style="color:#cc0000">ERP</span></strong></div>
+                </div>
+            </div>
+            <div id="tg_status_frame">
+               <img src="tg_erp_status/static/src/img/status_warning.png" title=""/> OpenERP IS CURRENTLY CLOSED FOR ALL USERS !
+            </div>
+        </t>
+    </t>
+
+</templates>

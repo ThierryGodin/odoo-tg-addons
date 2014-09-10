@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+    	<menuitem 
+    		 id="menu_erp_status_config" 
+    		 name="Maintenance" 
+    		 parent="base.menu_config"
+    		 sequence="50" 
+    		 groups="base.group_system"
+    		 />
+
+		<record id="erp_status_config_form" model="ir.ui.view">
+			<field name="name">erp.status.config.form</field>
+			<field name="model">tg.erp.status.config</field>
+			<field name="arch" type="xml">
+	    		<form string="Configuration" version="7.0">  
+	    			<group col="4">
+	    				<field name="create_date" readonly="1"/>
+	    				<field name="state"/>
+	    				<field name="is_cur_config"/>
+	    			</group>
+	    			<separator string="Message" colspan="4"/>
+	    			<field name="message_id" attrs="{'required':[('state','in',['maintenance'])]}"/>
+	    		</form>
+			</field>
+		</record>
+
+    	<record id="erp_status_config_tree" model="ir.ui.view">
+			<field name="name">erp.status.config.tree</field>
+			<field name="model">tg.erp.status.config</field>
+			<field name="arch" type="xml">
+				<tree string="ERP Status configurations">    
+					<field name="create_date"/> 
+					<field name="state"/> 
+					<field name="is_cur_config"/>
+					<field name="message_id"/> 
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_menu_erp_status_config">
+			<field name="name">ERP Status configurations</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">tg.erp.status.config</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">
+				Click here to create a new ERP Status configuration.
+				</p>
+			</field>
+		</record>
+
+		<record id="erp_status_msg_form" model="ir.ui.view">
+			<field name="name">erp.status.msg.form</field>
+			<field name="model">tg.erp.status.message</field>
+			<field name="arch" type="xml">
+				<form string="Maintenance message" version="7.0">
+					<group>  
+						<field name="create_date" readonly="1"/>  
+						<field name="name"/> 
+					</group>
+					<separator string="Message"/>
+					<field name="message" 
+                       string="Message" 
+                       widget="html"
+                       options='{"safe": True}'
+                       editor_width="100%%"
+                       editor_height="350"
+                       editor_controls="bold italic underline strikethrough subscript superscript | font size style | color highlight removeformat | bullets numbering | outdent indent | alignleft center alignright justify | undo redo | rule image link unlink | cut copy paste pastetext | print source"
+    				/>
+				</form>
+			</field>
+		</record>
+
+		<record id="erp_status_msg_tree" model="ir.ui.view">
+			<field name="name">erp.status.msg.tree</field>
+			<field name="model">tg.erp.status.message</field>
+			<field name="arch" type="xml">
+				<tree string="Messages">   
+					<field name="create_date"/>  
+					<field name="name"/> 
+				</tree>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_menu_erp_status_msg">
+			<field name="name">ERP Status messages</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">tg.erp.status.message</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+			<field name="help" type="html">
+				<p class="oe_view_nocontent_create">
+				Click here to create a new maintenance message.
+				</p>
+			</field>
+		</record>
+
+    	<menuitem 
+    		 id="menu_erp_status" 
+    		 name="ERP Status" 
+    		 parent="menu_erp_status_config"
+    		 action="action_menu_erp_status_config"
+    		 sequence="1" 
+    		 />
+
+    	<menuitem 
+    		 id="menu_erp_status_msg" 
+    		 name="ERP Status messages" 
+    		 parent="menu_erp_status_config"
+    		 action="action_menu_erp_status_msg"
+    		 sequence="2" 
+    		 />
+
+    </data>
+</openerp>
