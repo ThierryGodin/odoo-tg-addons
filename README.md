@@ -16,6 +16,8 @@ Thierry Godin (FR)
 - [OpenERP - Module TG POS ENHANCED - Or how to override the module Point Of Sale (EN)](http://thierry-godin.developpez.com/openerp/openerp-module-pos-enhanced-en/)
 - [OpenERP - Module TG POS ENHANCED - Ou comment surcharger le module Point Of Sale (FR)](http://thierry-godin.developpez.com/openerp/openerp-module-pos-enhanced-fr/)
 - [Interaction entre Odoo et PHP via XML-RPC - Les Web Services avec Odoo (OpenERP) (FR)](http://thierry-godin.developpez.com/openerp/openerp-xmlrpc-php-fr/)
+- - [Configuration du Point de Vente pour Odoo 7 (FR)](http://thierry-godin.developpez.com/openerp/odoo7-tutoriel-configuration-point-of-sale-fr/)
+
 
 #### The french version of Technical Memento here :
 
