@@ -119,7 +119,7 @@
              name="Configuration" 
              parent="misc_menu_top"
              sequence="100" 
-             groups="base.group_system"
+             groups="tips.group_tip_manager"
              />
              
 		<menuitem 
