@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data noupdate="1">
+        <record model="tip" id="tip_1">
+            <field name="name">This is the first tip</field>
+            <field name="texte">This tip is displayed everywhere in the ERP</field>
+        </record>
+        <record model="tip" id="tip_2">
+            <field name="name">This is the second tip</field>
+            <field name="texte">This one is displayed when model sale_order is launched</field>
+            <field model="ir.model" name="model_ids"  search="[('model','=','sale.order')]"/>
+        </record>
+        <record model="tip" id="tip_3">
+            <field name="name">This is third tip</field>
+            <field name="texte">This one is also displayed when sale_order is launched. Look at the arrow on right</field>
+            <field model="ir.model" name="model_ids"  search="[('model','=','sale.order')]"/>
+        </record>
+        <record model="tip" id="tip_4">
+            <field name="name">Multiple models</field>
+            <field name="texte">This one is displayed when models are launched : sale_order, sale_shop, pos_order</field>
+            <field model="ir.model" name="model_ids"  search="['|','|', ('model','=','sale.order'), ('model','=','sale.shop'), ('model','=','pos.order')]"/>
+        </record>
+         <record model="tip" id="tip_5">
+            <field name="name">Tip with HTML</field>
+            <field name="texte">Tips support &lt;span style=&quot;color:red&quot;&gt;HTML TAGS&lt;/span&gt;</field>
+        </record>
+    </data>
+</openerp>
+        

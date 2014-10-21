@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+	<t t-name="Tip">
+		<tr id="tip_tr" class="oe_header_row">
+			<td colspan="4">
+				<div class="tip_cell">
+					<div class="tip">TIP </div>
+					<div class="tip_title"/>
+					<div class="tip_text"/>
+					<div class="tip_next"><span id="nb_tips"/> <img id="img_next" src="tips/static/src/img/next.png" title="Next tip"/></div>
+				</div>
+			</td>
+		</tr>
+	</t>
+</templates>

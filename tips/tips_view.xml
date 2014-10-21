@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+    	<record model="ir.ui.view" id="view_tip_search">
+	      <field name="name">tip.search.view</field>
+	      <field name="model">tip</field>
+	      <field name="arch" type="xml">
+	        <search string="Tips">
+	          <filter name="filter_see_all" string="All" domain="['|', ('active', '=',True), ('active', '=',False)]" />
+	          <filter name="filter_see_active" string="Active" domain="[('active', '=',True)]" />
+	          <filter name="filter_see_inactive" string="Inactive" domain="[('active', '=',False)]" />
+	        </search>
+	      </field>
+	    </record>
+
+		<record id="tip_tree_readonly" model="ir.ui.view">
+			<field name="name">tip.tree.readonly</field>
+			<field name="model">tip</field>
+			<field name="arch" type="xml">
+				<tree string="Tips" edit="false" create="false" delete="false">   
+					<field name="create_date"/>  
+					<field name="name"/> 
+					<field name="texte"/>
+				</tree>
+			</field>
+		</record>
+
+		<record id="tip_form_readonly" model="ir.ui.view">
+			<field name="name">tip.form.readonly</field>
+			<field name="model">tip</field>
+			<field name="arch" type="xml">
+				<form string="Tips" version="7.0" edit="false" create="false" delete="false">
+					<group>  
+						<field name="name"/>
+						<field name="create_date" readonly="1"/>  
+						<field name="write_date" readonly="1"/>  
+						<field name="active"/>
+					</group>
+					<separator string="Text"/>
+					<field name="texte" />
+				</form>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window" id="action_menu_tips_readonly">
+			<field name="name">Tips</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">tip</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+            <field name="view_id" ref="tip_tree_readonly"/>
+            <field name="context">{'form_view_ref' : 'tips.tip_form_readonly', 'tree_view_ref' : 'tips.tip_tree_readonly', 'search_default_filter_see_active':1}</field>
+		</record>
+        
+        <menuitem id="misc_menu_top" name="Miscellaneous" sequence="150"/>
+        
+		<menuitem 
+    		 id="menu_tips" 
+    		 name="Tips" 
+    		 parent="misc_menu_top"
+    		 sequence="1" 
+    		 />
+
+    	<menuitem 
+    		 id="menu_see_tips" 
+    		 name= "See tips" 
+    		 parent= "menu_tips"
+    		 action= "action_menu_tips_readonly"
+    		 sequence= "10" 
+    		 />
+
+    	<record id="tip_tree" model="ir.ui.view">
+			<field name="name">tip.tree</field>
+			<field name="model">tip</field>
+			<field name="arch" type="xml">
+				<tree string="Tips" >   
+					<field name="create_date"/>  
+					<field name="name"/> 
+					<field name="texte" />
+					<field name="active"/>
+				</tree>
+			</field>
+		</record>
+
+		<record id="tip_form" model="ir.ui.view">
+			<field name="name">tip.form</field>
+			<field name="model">tip</field>
+			<field name="arch" type="xml">
+				<form string="Tips" version="7.0">
+					<group>  
+						<field name="name"/>
+						<field name="create_date" readonly="1"/>  
+						<field name="write_date" readonly="1"/>  
+						<field name="active"/>
+					</group>
+					<separator string="Text (max 160 ch. / support HTML tags)"/>
+					<field name="texte" />
+					<separator string="Models (No model selected = tip visible everywhere)" colspan="4"/>
+    				<field name="model_ids" />
+				</form>
+			</field>
+		</record>
+
+		
+
+		<record model="ir.actions.act_window" id="action_menu_tips">
+			<field name="name">Tips</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">tip</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+            <field name="view_id" ref="tip_tree"/>
+            <field name="context">{'form_view_ref' : 'tips.tip_form', 'tree_view_ref' : 'tips.tip_tree', 'search_default_filter_see_all':1}</field>
+		</record>
+        
+        <menuitem 
+             id="menu_misc_configuration" 
+             name="Configuration" 
+             parent="misc_menu_top"
+             sequence="100" 
+             groups="base.group_system"
+             />
+             
+		<menuitem 
+    		 id="menu_see_config_tips" 
+    		 name="Tips" 
+    		 parent="menu_misc_configuration"
+    		 action="action_menu_tips"
+    		 sequence="20" 
+    		 />
+
+    </data>
+</openerp>
