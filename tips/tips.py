@@ -2,7 +2,6 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2014 - Thierry Godin. All Rights Reserved
 #    @author Thierry Godin <thierry@lapinmoutardepommedauphine.com>
 #
 #    This program is free software: you can redistribute it and/or modify
